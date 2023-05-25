@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Junjie Ye | GVL Lab @ USC</title>
+    <link>/author/junjie-ye/</link>
+      <atom:link href="/author/junjie-ye/index.xml" rel="self" type="application/rss+xml" />
+    <description>Junjie Ye</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>/author/junjie-ye/avatar_hu12c9d8e626a96307c7f955f69f18a7cf_757346_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Junjie Ye</title>
+      <link>/author/junjie-ye/</link>
+    </image>
+    
+  </channel>
+</rss>

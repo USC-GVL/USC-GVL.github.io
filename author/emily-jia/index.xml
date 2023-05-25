@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emily Jia | GVL Lab @ USC</title>
+    <link>/author/emily-jia/</link>
+      <atom:link href="/author/emily-jia/index.xml" rel="self" type="application/rss+xml" />
+    <description>Emily Jia</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>/author/emily-jia/avatar_hu35f873aacb2a38f363338e35e635065c_40768_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Emily Jia</title>
+      <link>/author/emily-jia/</link>
+    </image>
+    
+  </channel>
+</rss>
