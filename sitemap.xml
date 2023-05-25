@@ -2,98 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/event/example/</loc>
+    <loc>https://usc-gvl.github.io/event/example/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/event/</loc>
+    <loc>https://usc-gvl.github.io/event/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/publication-type/1/</loc>
+    <loc>https://usc-gvl.github.io/publication-type/1/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/authors/</loc>
+    <loc>https://usc-gvl.github.io/authors/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/publication/2023_cvpr_freenerf/</loc>
+    <loc>https://usc-gvl.github.io/publication/2023_cvpr_freenerf/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/author/jiawei-yang/</loc>
+    <loc>https://usc-gvl.github.io/author/jiawei-yang/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/author/marco-pavone/</loc>
+    <loc>https://usc-gvl.github.io/author/marco-pavone/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/nerf/</loc>
+    <loc>https://usc-gvl.github.io/tag/nerf/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/publication_types/</loc>
+    <loc>https://usc-gvl.github.io/publication_types/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/publication/</loc>
+    <loc>https://usc-gvl.github.io/publication/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://usc-gvl.github.io/tags/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/author/yue-wang/</loc>
+    <loc>https://usc-gvl.github.io/author/yue-wang/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/</loc>
+    <loc>https://usc-gvl.github.io/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/contact/</loc>
+    <loc>https://usc-gvl.github.io/contact/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/people/</loc>
+    <loc>https://usc-gvl.github.io/people/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tour/</loc>
+    <loc>https://usc-gvl.github.io/tour/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/post/20-12-02-icml-best-paper/</loc>
+    <loc>https://usc-gvl.github.io/post/20-12-02-icml-best-paper/</loc>
     <lastmod>2020-12-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/post/</loc>
+    <loc>https://usc-gvl.github.io/post/</loc>
     <lastmod>2020-12-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/post/20-12-01-wowchemy-prize/</loc>
+    <loc>https://usc-gvl.github.io/post/20-12-01-wowchemy-prize/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/admin/</loc>
+    <loc>https://usc-gvl.github.io/admin/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://usc-gvl.github.io/categories/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/author/emily-jia/</loc>
+    <loc>https://usc-gvl.github.io/author/emily-jia/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/author/jiageng-mao/</loc>
+    <loc>https://usc-gvl.github.io/author/jiageng-mao/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/author/jonathan-zamora/</loc>
+    <loc>https://usc-gvl.github.io/author/jonathan-zamora/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/author/junjie-ye/</loc>
+    <loc>https://usc-gvl.github.io/author/junjie-ye/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

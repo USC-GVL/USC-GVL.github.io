@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GVL Lab @ USC</title>
-    <link>/</link>
-      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://usc-gvl.github.io/</link>
+      <atom:link href="https://usc-gvl.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>GVL Lab @ USC</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/logo_hu4523b1a0decc068c2e87c093bae2df1a_6870_300x300_fit_lanczos_3.png</url>
+      <url>https://usc-gvl.github.io/media/logo_hu4523b1a0decc068c2e87c093bae2df1a_6870_300x300_fit_lanczos_3.png</url>
       <title>GVL Lab @ USC</title>
-      <link>/</link>
+      <link>https://usc-gvl.github.io/</link>
     </image>
     
     <item>
       <title>Example Event</title>
-      <link>/event/example/</link>
+      <link>https://usc-gvl.github.io/event/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>/event/example/</guid>
+      <guid>https://usc-gvl.github.io/event/example/</guid>
       <description>&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Wowchemy&amp;rsquo;s &lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
@@ -29,9 +29,9 @@
     
     <item>
       <title>FreeNeRF: Improving Few-shot Neural Rendering with Free Frequency Regularization</title>
-      <link>/publication/2023_cvpr_freenerf/</link>
+      <link>https://usc-gvl.github.io/publication/2023_cvpr_freenerf/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/publication/2023_cvpr_freenerf/</guid>
+      <guid>https://usc-gvl.github.io/publication/2023_cvpr_freenerf/</guid>
       <description>&lt;!-- 
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -47,33 +47,33 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Contact</title>
-      <link>/contact/</link>
+      <link>https://usc-gvl.github.io/contact/</link>
       <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>/contact/</guid>
+      <guid>https://usc-gvl.github.io/contact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>People</title>
-      <link>/people/</link>
+      <link>https://usc-gvl.github.io/people/</link>
       <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>/people/</guid>
+      <guid>https://usc-gvl.github.io/people/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tour</title>
-      <link>/tour/</link>
+      <link>https://usc-gvl.github.io/tour/</link>
       <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>/tour/</guid>
+      <guid>https://usc-gvl.github.io/tour/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jian Yang and Monica Hall Win the Best Paper Award at Wowchemy 2020</title>
-      <link>/post/20-12-02-icml-best-paper/</link>
+      <link>https://usc-gvl.github.io/post/20-12-02-icml-best-paper/</link>
       <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>/post/20-12-02-icml-best-paper/</guid>
+      <guid>https://usc-gvl.github.io/post/20-12-02-icml-best-paper/</guid>
       <description>&lt;p&gt;Congratulations to Jian Yang and Monica Hall for winning the Best Paper Award at the 2020 Conference on Wowchemy for their paper “Learning Wowchemy”.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.&lt;/p&gt;
 &lt;p&gt;Sed eu dui nec ligula bibendum dapibus. Nullam imperdiet auctor tortor, vel cursus mauris malesuada non. Quisque ultrices euismod dapibus. Aenean sed gravida risus. Sed nisi tortor, vulputate nec quam non, placerat porta nisl. Nunc varius lobortis urna, condimentum facilisis ipsum molestie eu. Ut molestie eleifend ligula sed dignissim. Duis ut tellus turpis. Praesent tincidunt, nunc sed congue malesuada, mauris enim maximus massa, eget interdum turpis urna et ante. Morbi sem nisl, cursus quis mollis et, interdum luctus augue. Aliquam laoreet, leo et accumsan tincidunt, libero neque aliquet lectus, a ultricies lorem mi a orci.&lt;/p&gt;
@@ -82,9 +82,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Richard Hendricks Wins First Place in the Wowchemy Prize</title>
-      <link>/post/20-12-01-wowchemy-prize/</link>
+      <link>https://usc-gvl.github.io/post/20-12-01-wowchemy-prize/</link>
       <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>/post/20-12-01-wowchemy-prize/</guid>
+      <guid>https://usc-gvl.github.io/post/20-12-01-wowchemy-prize/</guid>
       <description>&lt;p&gt;Congratulations to Richard Hendricks for winning first place in the Wowchemy Prize.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.&lt;/p&gt;
 &lt;p&gt;Sed eu dui nec ligula bibendum dapibus. Nullam imperdiet auctor tortor, vel cursus mauris malesuada non. Quisque ultrices euismod dapibus. Aenean sed gravida risus. Sed nisi tortor, vulputate nec quam non, placerat porta nisl. Nunc varius lobortis urna, condimentum facilisis ipsum molestie eu. Ut molestie eleifend ligula sed dignissim. Duis ut tellus turpis. Praesent tincidunt, nunc sed congue malesuada, mauris enim maximus massa, eget interdum turpis urna et ante. Morbi sem nisl, cursus quis mollis et, interdum luctus augue. Aliquam laoreet, leo et accumsan tincidunt, libero neque aliquet lectus, a ultricies lorem mi a orci.&lt;/p&gt;
@@ -93,9 +93,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title></title>
-      <link>/admin/config.yml</link>
+      <link>https://usc-gvl.github.io/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/admin/config.yml</guid>
+      <guid>https://usc-gvl.github.io/admin/config.yml</guid>
       <description></description>
     </item>
     

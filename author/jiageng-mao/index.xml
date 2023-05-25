@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jiageng Mao | GVL Lab @ USC</title>
-    <link>/author/jiageng-mao/</link>
-      <atom:link href="/author/jiageng-mao/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://usc-gvl.github.io/author/jiageng-mao/</link>
+      <atom:link href="https://usc-gvl.github.io/author/jiageng-mao/index.xml" rel="self" type="application/rss+xml" />
     <description>Jiageng Mao</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
     <image>
-      <url>/author/jiageng-mao/avatar_hud9f72fa6afe08ac1fb5bba6beb1e07f2_19403_270x270_fill_q75_lanczos_center.jfif</url>
+      <url>https://usc-gvl.github.io/author/jiageng-mao/avatar_hud9f72fa6afe08ac1fb5bba6beb1e07f2_19403_270x270_fill_q75_lanczos_center.jfif</url>
       <title>Jiageng Mao</title>
-      <link>/author/jiageng-mao/</link>
+      <link>https://usc-gvl.github.io/author/jiageng-mao/</link>
     </image>
     
   </channel>
