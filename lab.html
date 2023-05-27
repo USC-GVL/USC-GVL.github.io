@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/gvl-dark.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/gvl-dark.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/gvl-dark.svg">
+    <link rel="manifest" href="/site.webmanifest">
+    <title> USC Geometry, Vision, and Learning Lab </title>
+</head>
+
+<body>
+    <header id="header" style="display:flex; justify-content: space-between; padding-left:10px;padding-right:10px;">
+        <a href="index.html"><img style="width: 35px;height:35px;" src="assets/gvl.svg" /></a>
+        <div style="width: calc(var(--width1)/2); display:flex; justify-content: space-between;">
+            <a href="index.html">Home</a>
+            <a href="lab.html" style="color:var(--red1);font-weight: 600;">Lab</a>
+            <a href="research.html">Research</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <div class="section" style="padding: 50px 0px 0px 0px;">
+        <h1>Lab</h1>
+        <h2>Faculty</h2>
+        <div id="faculty-grid" style="display: flex; flex-wrap: wrap; width:100%;"></div>
+        <h2>Members</h2>
+        <div id="student-grid" style="display: flex; flex-wrap: wrap;  width:100%;">
+        </div>
+    </div>
+
+    <script>
+        let shuran_finally_agrees_to_put_pets_on_the_website = false;
+
+        let group = [
+            {
+                "subgroup": "Faculty",
+                "members": [{
+                    "name": "Yue Wang",
+                    "picture": "assets/people/yue.png",
+                    "link": "https://yuewang.xyz/"
+                }]
+            },
+            {
+                "subgroup": "Ph.D. Student",
+                "members": [
+                    {
+                        "name": "Jiawei Yang",
+                        "picture": "assets/people/jiawei.jpeg",
+                        "link": "https://jiawei-yang.github.io/"
+                    },
+                    {
+                        "name": "Junjie Ye",
+                        "picture": "assets/people/junjie.jpg",
+                        "link": "https://vision4robotics.github.io/authors/junjie-ye/"
+                    },
+                    {
+                        "name": "Jiageng Mao",
+                        "picture": "assets/gvl.svg",
+                        "link": "https://scholar.google.com/citations?user=5S9eZbcAAAAJ&hl=zh-CN&authuser=1&oi=ao"
+                    },
+                    {
+                        "name": "Emily Jia",
+                        "picture": "assets/people/emily.jpeg",
+                        "link": "https://emily-jia.github.io/personal-web/"
+                    },
+                ]
+            },
+            {
+                "subgroup": "Master's Student",
+                "members": [
+                    {
+                        "name": "Jonathan Zamora",
+                        "picture": "assets/people/jonathan.jpeg",
+                        "link": "https://jonzamora.dev/"
+                    },
+
+                ]
+            },
+        ]
+
+        let getSection = subgroupName => {
+            switch (subgroupName) {
+                case "Faculty":
+                    return document.getElementById("faculty-grid");
+                case "Post-Doctoral":
+                    return document.getElementById("student-grid");
+                case "Ph.D. Student":
+                    return document.getElementById("student-grid");
+                case "Master's Student":
+                    return document.getElementById("student-grid");
+                case "Undergraduate Student":
+                    return document.getElementById("student-grid");
+                case "Visiting Student":
+                    return document.getElementById("student-grid");
+                case "Alumni":
+                    return document.getElementById("alumni-list");
+            }
+        }
+
+        group.forEach(subgroup => {
+            let subgroupName = subgroup["subgroup"];
+            let section = getSection(subgroupName);
+            subgroup["members"].forEach(member => {
+                let cell = subgroupName == "Alumni" ?
+                    `<a href=${member["link"] == undefined ? "#" : member["link"]}>
+                    <div style="margin-bottom: 5px;">
+                        <b>${member["name"]}</b>
+                        <p style="display:inline;"> 
+                        ${member["note"] == undefined ? "" : member["note"]}
+                        </p>
+                    </div>
+                </a>
+                `:
+                    `<a href=${member["link"] == undefined ? "#" : member["link"]}>
+                    <div style="width:140px; float: center; text-align: center; margin-right: 40px; margin-bottom: 35px;">
+                        <img style="width: 100%; border-radius:5px;" src="${member["picture"]}"/>
+                        <b>${member["name"]}</b>
+                        <p> ${subgroupName}
+                        ${member["note"] == undefined ? "" : member["note"]}
+                        </p>
+                    </div>
+                </a>
+                `;
+                section.insertAdjacentHTML('beforeend', cell);
+            });
+        });
+    </script>
+</body>
+</html>
