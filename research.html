@@ -28,16 +28,210 @@
     </div>
     <script>
         let publications = [
-
+            {
+                "name": "VectorMapNet: End-to-End Vectorized HD Map Learning",
+                "authors": "Yicheng Liu, Tianyuan Yuan, Yue Wang, Yilun Wang, and Hang Zhao",
+                "conference": "ICML 2023",
+                "webpage": "https://tsinghua-mars-lab.github.io/vectormapnet/",
+                "paper": "https://arxiv.org/abs/2206.08920",
+                "code": "https://github.com/Tsinghua-MARS-Lab/vectormapnet",
+                "thumbnail": "assets/papers/vectormapnet.png"
+            },
+            {
+                "name": "Neural Map Prior for Autonomous Driving",
+                "authors": "Xuan Xiong, Yicheng Liu, Tianyuan Yuan, Yue Wang, Yilun Wang, and Hang Zhao",
+                "conference": "CVPR 2023",
+                "webpage": "https://tsinghua-mars-lab.github.io/neural_map_prior/",
+                "paper": "https://arxiv.org/abs/2303.00322",
+                "code": "https://github.com/Tsinghua-MARS-Lab/neural_map_prior",
+                "thumbnail": "assets/papers/npn_demo_website.gif"
+            },
+            {
+                "name": "ViP3D: End-to-End Visual Trajectory Prediction via 3D Agent Queries",
+                "authors": "Junru Gu, Chenxu Hu, Tianyuan Zhang, Xuanyao Chen, Yilun Wang, Yue Wang, and Hang Zhao",
+                "conference": "CVPR 2023",
+                "webpage": "https://tsinghua-mars-lab.github.io/ViP3D/",
+                "paper": "https://arxiv.org/abs/2208.01582",
+                "code": "https://github.com/Tsinghua-MARS-Lab/ViP3D",
+                "thumbnail": "assets/papers/vip3d.png"
+            },
+            {
+                "name": "GeoMAE: Masked Geometric Target Prediction for Self-supervised Point Cloud Pre-Training",
+                "authors": "Xiaoyu Tian, Haoxi Ran, Yue Wang, and Hang Zhao",
+                "conference": "CVPR 2023",
+                "paper": "https://arxiv.org/abs/2305.08808",
+                "code": "https://github.com/Tsinghua-MARS-Lab/GeoMAE",
+                "thumbnail": "assets/papers/geomae.png"
+            },
             {
                 "name": "FreeNeRF: Improving Few-shot Neural Rendering with Free Frequency Regularization",
                 "authors": "Jiawei Yang, Marco Pavone, and Yue Wang",
-                "conference": "Conference on Computer Vision and Pattern Recognition 2023 (CVPR 2023)",
+                "conference": "CVPR 2023",
                 "webpage": "https://jiawei-yang.github.io/FreeNeRF/",
                 "paper": "https://arxiv.org/abs/2303.07418",
                 "code": "https://github.com/Jiawei-Yang/FreeNeRF",
                 "thumbnail": "assets/papers/freenerf.png",
             },
+            {
+                "name": "Cross-Dataset Sensor Alignment: Making Visual 3D Object Detector Generalizable",
+                "authors": "Liangtao Zheng, Yicheng Liu, Yue Wang, and Hang Zhao",
+                "conference": "CoRL 2023",
+                "paper": "https://proceedings.mlr.press/v229/zheng23a.html",
+                "thumbnail": "assets/papers/cross_dataset_sensor_alignment.png"
+            },
+            {
+                "name": "Occ3D: A Large-Scale 3D Occupancy Prediction Benchmark for Autonomous Driving",
+                "authors": "Xiaoyu Tian, Tao Jiang, Longfei Yun, Yucheng Mao, Huitong Yang, Yue Wang, Yilun Wang, and Hang Zhao",
+                "conference": "NeurIPS 2023",
+                "webpage": "https://tsinghua-mars-lab.github.io/Occ3D/",
+                "paper": "https://arxiv.org/abs/2304.14365",
+                "code": "https://github.com/Tsinghua-MARS-Lab/Occ3D",
+                "thumbnail": "assets/papers/occ3d.png"
+            },
+            {
+                "name": "GPT-Driver: Learning to Drive with GPT",
+                "authors": "Jiageng Mao, Yuxi Qian, Junjie Ye, Hang Zhao, and Yue Wang",
+                "conference": "NeurIPS 2023 Foundation Models for Decision Making Workshop",
+                "webpage": "https://pointscoder.github.io/projects/gpt_driver/index.html",
+                "paper": "https://arxiv.org/abs/2310.01415",
+                "code": "https://github.com/PointsCoder/GPT-Driver",
+                "thumbnail": "assets/papers/gpt_driver.png"
+            },
+            {
+                "name": "Rethinking Directional Integration in Neural Radiance Fields",
+                "authors": "Congyue Deng, Jiawei Yang, Leonidas Guibas, and Yue Wang",
+                "conference": "arxiv 2023",
+                "webpage": "https://cs.stanford.edu/~congyue/linerf/",
+                "paper": "https://arxiv.org/abs/2311.16504",
+                "thumbnail": "assets/papers/linerf.gif"
+            },
+            {
+                "name": "Augmenting Lane Perception and Topology Understanding with Standard Definition Navigation Map",
+                "authors": "Katie Z Luo, Xinshuo Weng, Yan Wang, Shuang Wu, Jie Li, Kilian Q Weinberger, Yue Wang, and Marco Pavone",
+                "conference": "ICRA 2024",
+                "webpage": "https://katieluo88.github.io/SMERF/",
+                "paper": "https://arxiv.org/abs/2311.04079v1",
+                "code": "https://github.com/NVlabs/SMERF",
+                "thumbnail": "assets/papers/smerf.gif"
+            },
+            {
+                "name": "EmerNeRF: Emergent Spatial-Temporal Scene Decomposition via Self-Supervision",
+                "authors": "Jiawei Yang, Boris Ivanovic, Or Litany, Xinshuo Weng, Seung Wook Kim, Boyi Li, Tong Che, Danfei Xu, Sanja Fidler, Marco Pavone, and Yue Wang",
+                "conference": "ICLR 2024",
+                "webpage": "https://emernerf.github.io/",
+                "paper": "https://arxiv.org/abs/2311.02077",
+                "code": "https://github.com/NVlabs/EmerNeRF",
+                "thumbnail": "assets/papers/emernerf.png"
+            },
+            {
+                "name": "PARA-Drive: Parallelized Architecture for Real-time Autonomous Driving",
+                "authors": "Xinshuo Weng, Boris Ivanovic, Yan Wang, Yue Wang, and Marco Pavone",
+                "conference": "CVPR 2024",
+                "webpage": "https://xinshuoweng.github.io/paradrive/",
+                "paper": "https://openaccess.thecvf.com/content/CVPR2024/html/Weng_PARA-Drive_Parallelized_Architecture_for_Real-time_Autonomous_Driving_CVPR_2024_paper.html",
+                "thumbnail": "assets/papers/para_drive.png"
+            },
+            {
+                "name": "Driving Everywhere with Large Language Model Policy Adaptation",
+                "authors": "Boyi Li, Yue Wang, Jiageng Mao, Boris Ivanovic, Sushant Veer, Karen Leung, and Marco Pavone",
+                "conference": "CVPR 2024",
+                "webpage": "https://boyiliee.github.io/llada/",
+                "paper": "https://arxiv.org/pdf/2402.05932",
+                "code": "https://github.com/Boyiliee/LLaDA-AV",
+                "thumbnail": "assets/papers/llada.png"
+            },
+            {
+                "name": "Towards Realistic Scene Generation with LiDAR Diffusion Models",
+                "authors": "Haoxi Ran, Vitor Guizilini, and Yue Wang",
+                "conference": "CVPR 2024",
+                "webpage": "https://lidar-diffusion.github.io/",
+                "paper": "https://arxiv.org/abs/2404.00815",
+                "code": "https://github.com/hancyran/LiDAR-Diffusion",
+                "thumbnail": "assets/papers/lidar_diffusion.jpg"
+            },
+            {
+                "name": "Parallelized Spatiotemporal Binding",
+                "authors": "Gautam Singh, Yue Wang, Jiawei Yang, Boris Ivanovic, Sungjin Ahn, Marco Pavone, and Tong Che",
+                "conference": "ICML 2024",
+                "webpage": "https://parallel-st-binder.github.io/",
+                "paper": "https://arxiv.org/abs/2402.17077",
+                "thumbnail": "assets/papers/psb.png"
+            },
+            {
+                "name": "PreSight: Enhancing Autonomous Vehicle Perception with City-Scale NeRF Priors",
+                "authors": "Tianyuan Yuan, Yucheng Mao, Jiawei Yang, Yicheng Liu, Yue Wang, Hang Zhao",
+                "conference": "ECCV 2024",
+                "paper": "https://arxiv.org/abs/2403.09079",
+                "code": "https://github.com/yuantianyuan01/PreSight",
+                "thumbnail": "assets/papers/presight.jpg"
+            },
+            {
+                "name": "Denoising Vision Transformers",
+                "authors": "Jiawei Yang, Katie Z Luo, Jiefeng Li, Congyue Deng, Leonidas Guibas, Dilip Krishnan, Kilian Q Weinberger, Yonglong Tian, and Yue Wang",
+                "conference": "ECCV 2024 Oral",
+                "webpage": "https://jiawei-yang.github.io/DenoisingViT/",
+                "paper": "https://arxiv.org/abs/2401.02957",
+                "code": "https://github.com/Jiawei-Yang/Denoising-ViT",
+                "thumbnail": "assets/papers/dvt.jpeg"
+            },
+            {
+                "name": "A Language Agent for Autonomous Driving",
+                "authors": "Jiageng Mao, Junjie Ye, Yuxi Qian, Marco Pavone, and Yue Wang",
+                "conference": "COLM 2024",
+                "webpage": "https://usc-gvl.github.io/Agent-Driver/",
+                "paper": "https://arxiv.org/pdf/2311.10813",
+                "code": "https://github.com/USC-GVL/Agent-Driver",
+                "thumbnail": "assets/papers/agent-driver.png"
+            },
+            {
+                "name": "Tokenize the World into Object-level Knowledge to Address Long-tail Events in Autonomous Driving",
+                "authors": "Ran Tian, Boyi Li, Xinshuo Weng, Yuxiao Chen, Edward Schmerling, Yue Wang, Boris Ivanovic, and Marco Pavone",
+                "conference": "CoRL 2024",
+                "paper": "https://arxiv.org/abs/2407.00959",
+                "thumbnail": "assets/papers/token.png"
+            },
+            {
+                "name": "Q-SLAM: Quadric Representations for Monocular SLAM",
+                "authors": "Chensheng Peng, Chenfeng Xu, Yue Wang, Mingyu Ding, Heng Yang, Masayoshi Tomizuka, Kurt Keutzer, Marco Pavone, and Wei Zhan",
+                "conference": "CoRL 2024",
+                "paper": "https://arxiv.org/abs/2403.08125",
+                "thumbnail": "assets/papers/q-slam.png"
+            },
+            {
+                "name": "RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation",
+                "authors": "Yuxuan Kuang, Junjie Ye, Haoran Geng, Jiageng Mao, Congyue Deng, Leonidas Guibas, He Wang, and Yue Wang",
+                "conference": "CoRL 2024 Oral",
+                "webpage": "https://yuxuank.com/RAM/",
+                "paper": "https://arxiv.org/abs/2407.04689",
+                "code": "https://github.com/yxKryptonite/RAM_code",
+                "thumbnail": "assets/papers/ram.png"
+            },
+            {
+                "name": "DistillNeRF: Perceiving 3D Scenes from Single-Glance Images by Distilling Neural Fields and Foundation Model Features",
+                "authors": "Letian Wang, Seung Wook Kim, Jiawei Yang, Cunjun Yu, Boris Ivanovic, Steven L. Waslander, Yue Wang, Sanja Fidler, Marco Pavone, and Peter Karkus",
+                "conference": "NeurIPS 2024",
+                "webpage": "https://distillnerf.github.io/",
+                "paper": "https://arxiv.org/abs/2406.12095",
+                "thumbnail": "assets/papers/distillnerf.png"
+            },
+            {
+                "name": "Memorize What Matters: Emergent Scene Decomposition from Multitraverse",
+                "authors": "Yiming Li, Zehong Wang, Yue Wang, Zhiding Yu, Zan Gojcic, Marco Pavone, Chen Feng, and Jose M. Alvarez",
+                "conference": "NeurIPS 2024 Spotlight",
+                "webpage": "https://nvlabs.github.io/3DGM/",
+                "paper": "https://arxiv.org/abs/2405.17187",
+                "code": "https://github.com/NVlabs/3DGM",
+                "thumbnail": "assets/papers/3dgm.png"
+            },
+            {
+                "name": "Large Spatial Model: End-to-end Unposed Images to Semantic 3D",
+                "authors": "Zhiwen Fan, Jian Zhang, Wenyan Cong, Peihao Wang, Renjie Li, Kairun Wen, Shijie Zhou, Achuta Kadambi, Zhangyang Wang, Danfei Xu, Boris Ivanovic, Marco Pavone, Yue Wang",
+                "conference": "NeurIPS 2024",
+                "webpage": "https://largespatialmodel.github.io/",
+                "paper": "https://arxiv.org/abs/2410.18956",
+                "thumbnail": "assets/papers/lsm.svg"
+            },
+
         ]
 
         let section = document.getElementById("publications");
