@@ -25,6 +25,20 @@
     </header>
 
     <div class="section" style="padding: 50px 0px 50px 0px;">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="assets/23fall_group_build.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/24fall_group_build.JPG" style="width:100%">
+            </div>
+        
+            <!-- Dot navigation -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
         <h1>Lab</h1>
         <h2>Faculty</h2>
         <div id="faculty-grid" style="display: flex; flex-wrap: wrap; width:100%;"></div>
@@ -183,6 +197,30 @@
                 section.insertAdjacentHTML('beforeend', cell);
             });
         });
+    </script>
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            let slides = document.querySelectorAll('.mySlides');
+            let dots = document.querySelectorAll('.dot');
+            slides.forEach((slide, index) => {
+                slide.style.display = 'none';
+            });
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = 'block';
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[slideIndex - 1].classList.add('active');
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        function currentSlide(index) {
+            slideIndex = index - 1;
+            showSlides();
+        }
+
+        showSlides(); // Initialize the slideshow
     </script>
 </body>
 </html>

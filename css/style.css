@@ -188,3 +188,49 @@ body{
     color: var(--red1);
     font-weight: bold;
 }
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    position: relative;
+}
+
+.fade {
+    animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; } 
+    to { opacity: 1; }
+}
+
+/* Adjust dot size and position */
+.dot {
+    height: 10px; /* Smaller size */
+    width: 10px; /* Smaller size */
+    margin: 0 5px; /* Space between dots */
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+/* Active dot styling */
+.dot.active {
+    background-color: #717171;
+}
+
+/* Position dots at the bottom of the image */
+.dot-container {
+    position: absolute;
+    bottom: 20px; /* Adjust the vertical position */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
