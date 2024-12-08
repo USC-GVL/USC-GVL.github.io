@@ -8,6 +8,7 @@
     --width1: 900px;
     --red1: #990000;
     --gold: #FFCC00;
+    --uscgold: #f6c70d;
  }
 
 html, p{
@@ -154,4 +155,36 @@ body{
 .research-proj-title {
     color: var(--red1);
     font-weight: 400;
+}
+/* Scrollable container */
+.scrollable-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+/* News item layout */
+.news-item {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.news-item .date {
+    width: 100px;
+    font-weight: bold;
+    font-size: 1em;
+    margin-right: 1em;
+}
+
+.news-item .text {
+    flex: 1;
+    font-size: 1em;
+}
+
+/* Highlighted text */
+.highlight {
+    color: var(--red1);
+    font-weight: bold;
 }

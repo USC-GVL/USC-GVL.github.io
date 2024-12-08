@@ -231,7 +231,6 @@
                 "paper": "https://arxiv.org/abs/2410.18956",
                 "thumbnail": "assets/papers/lsm.svg"
             },
-
         ]
 
         let section = document.getElementById("publications");
@@ -239,11 +238,18 @@
             let name = publication["name"];
             let authors = publication["authors"];
             let conference = publication["conference"];
-            let webpage = publication["webpage"];
-            let code = publication["code"];
-            let paper = publication["paper"];
+            let webpage = publication["webpage"] ? `<a href="${publication["webpage"]}">Webpage</a>` : "";;
+            let code = publication["code"] ? `<a href="${publication["code"]}">Code</a>` : "";
+            let paper = publication["paper"] ? `<a href="${publication["paper"]}">Paper</a>` : "";
             let thumbnail = publication["thumbnail"];
             let note = publication["note"] ? publication["note"] : "";
+            // Highlight "Spotlight" "Oral" in red
+            if (conference.includes("Spotlight")) {
+                conference = conference.replace("Spotlight", `<span style="color: #ffb61e; font-weight: bold;">Spotlight</span>`);
+            }
+            if (conference.includes("Oral")) {
+               conference = conference.replace("Oral", `<span style="color: #ffb61e; font-weight: bold;">Oral</span>`);
+            }
             let thumbnail_node = thumbnail.includes("mp4") ?
                 `<video style="margin-right: 15px; border-radius: 5px;" width=140px height=auto autoplay loop muted>
                 <source src="${thumbnail}" type="video/mp4">
@@ -252,19 +258,15 @@
             section.insertAdjacentHTML('afterbegin',
                 `
                 <div style="padding-bottom: 30px; display:flex;">
-                    <a href="${webpage}"> 
+                    <a href="${publication["webpage"] || '#'}">
                         ${thumbnail_node}
                     </a>
                     <div>
-                        <a href="${webpage}"> <b> ${name}</b> </a>
+                        <a href="${publication["webpage"] || '#'}"> <b>${name}</b> </a>
                         <p> ${authors}</p>
                         <p> ${conference}</p>
                         <p style="color:#ffb61e;"> ${note}</p>
-                        <a href="${webpage}"> Webpage </a>
-                        ,
-                        <a href="${paper}"> Paper </a>
-                        , 
-                        <a href="${code}"> Code </a>
+                        ${[webpage, paper, code].filter(link => link).join(", ")}
                     </div>
                 </div>
                 `);
