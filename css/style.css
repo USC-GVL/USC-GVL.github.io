@@ -8,7 +8,7 @@
     --width1: 900px;
     --red1: #990000;
     --gold: #FFCC00;
-    --uscgold: #f6c70d;
+    --uscgold: #f6c70dcd;
  }
 
 html, p{
@@ -18,7 +18,7 @@ html, p{
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     letter-spacing: 0.8px;
     color: var(--grey);
