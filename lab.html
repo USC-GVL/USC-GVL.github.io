@@ -44,6 +44,8 @@
         <div id="faculty-grid" style="display: flex; flex-wrap: wrap; width:100%;"></div>
         <h2>Members</h2>
         <div id="student-grid" style="display: flex; flex-wrap: wrap;  width:100%;"></div>
+        <h2>Robots</h2>
+        <div id="robot-grid" style="display: flex; flex-wrap: wrap;  width:100%;"></div>
         <h2>Alumni</h2>
         <div id="alumni-list" style="display: flex; flex-wrap: wrap;  width:100%;"></div>
     </div>
@@ -139,6 +141,19 @@
                 ]
             },
             {
+                "subgroup": "Robots",
+                "members": [
+                    {
+                        "name": "Unitree G1",
+                        "picture": "assets/people/G1.jpg",
+                    },
+                    {
+                        "name": "Unitree H1",
+                        "picture": "assets/people/H1.jpg",
+                    },
+                ]
+            },
+            {
                 "subgroup": "Alumni",
                 "members": [
                     {
@@ -165,6 +180,8 @@
                     return document.getElementById("student-grid");
                 case "Visiting Student":
                     return document.getElementById("student-grid");
+                case "Robots":
+                    return document.getElementById("robot-grid");
                 case "Alumni":
                     return document.getElementById("alumni-list");
             }
@@ -188,7 +205,7 @@
                     <div style="width:140px; float: center; text-align: center; margin-right: 40px; margin-bottom: 35px;">
                         <img style="width: 100%; border-radius:5px;" src="${member["picture"]}"/>
                         <b>${member["name"]}</b>
-                        <p> ${subgroupName}
+                        <p> ${subgroupName == "Robots" ? "" : subgroupName}
                         ${member["note"] == undefined ? "" : member["note"]}
                         </p>
                     </div>
