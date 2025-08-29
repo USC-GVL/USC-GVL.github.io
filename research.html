@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/gvl-dark.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/gvl-dark.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/gvl-dark.svg">
+    <link rel="manifest" href="/site.webmanifest">
+    <title> USC Geometry, Vision, and Learning Lab </title>
+</head>
+
+<body>
+    <header id="header" style="display:flex; justify-content: space-between; padding-left:10px;padding-right:10px;">
+        <a href="index.html"><img style="width: 35px;height:35px;" src="assets/gvl.svg" /></a>
+        <div style="width: calc(var(--width1)/2); display:flex; justify-content: space-between;">
+            <a href="index.html">Home</a>
+            <a href="lab.html">Lab</a>
+            <a href="research.html" style="color:var(--red1);font-weight: 600;">Research</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+    <div class="section" id="publications" style="padding: 50px 30px 10px 30px;">
+
+    </div>
+    <script>
+        let publications = [
+            {
+                "name": "VectorMapNet: End-to-End Vectorized HD Map Learning",
+                "authors": "Yicheng Liu, Tianyuan Yuan, Yue Wang, Yilun Wang, Hang Zhao",
+                "conference": "ICML 2023",
+                "webpage": "https://tsinghua-mars-lab.github.io/vectormapnet/",
+                "paper": "https://arxiv.org/abs/2206.08920",
+                "code": "https://github.com/Tsinghua-MARS-Lab/vectormapnet",
+                "thumbnail": "assets/papers/vectormapnet.png"
+            },
+            {
+                "name": "Neural Map Prior for Autonomous Driving",
+                "authors": "Xuan Xiong, Yicheng Liu, Tianyuan Yuan, Yue Wang, Yilun Wang, Hang Zhao",
+                "conference": "CVPR 2023",
+                "webpage": "https://tsinghua-mars-lab.github.io/neural_map_prior/",
+                "paper": "https://arxiv.org/abs/2303.00322",
+                "code": "https://github.com/Tsinghua-MARS-Lab/neural_map_prior",
+                "thumbnail": "assets/papers/npn_demo_website.gif"
+            },
+            {
+                "name": "ViP3D: End-to-End Visual Trajectory Prediction via 3D Agent Queries",
+                "authors": "Junru Gu*, Chenxu Hu*, Tianyuan Zhang, Xuanyao Chen, Yilun Wang, Yue Wang, Hang Zhao",
+                "conference": "CVPR 2023",
+                "webpage": "https://tsinghua-mars-lab.github.io/ViP3D/",
+                "paper": "https://arxiv.org/abs/2208.01582",
+                "code": "https://github.com/Tsinghua-MARS-Lab/ViP3D",
+                "thumbnail": "assets/papers/vip3d.png"
+            },
+            {
+                "name": "GeoMAE: Masked Geometric Target Prediction for Self-supervised Point Cloud Pre-Training",
+                "authors": "Xiaoyu Tian, Haoxi Ran, Yue Wang, Hang Zhao",
+                "conference": "CVPR 2023",
+                "paper": "https://arxiv.org/abs/2305.08808",
+                "code": "https://github.com/Tsinghua-MARS-Lab/GeoMAE",
+                "thumbnail": "assets/papers/geomae.png"
+            },
+            {
+                "name": "FreeNeRF: Improving Few-shot Neural Rendering with Free Frequency Regularization",
+                "authors": "Jiawei Yang, Marco Pavone, Yue Wang",
+                "conference": "CVPR 2023",
+                "webpage": "https://jiawei-yang.github.io/FreeNeRF/",
+                "paper": "https://arxiv.org/abs/2303.07418",
+                "code": "https://github.com/Jiawei-Yang/FreeNeRF",
+                "thumbnail": "assets/papers/freenerf.png",
+            },
+            {
+                "name": "Cross-Dataset Sensor Alignment: Making Visual 3D Object Detector Generalizable",
+                "authors": "Liangtao Zheng, Yicheng Liu, Yue Wang, Hang Zhao",
+                "conference": "CoRL 2023",
+                "paper": "https://proceedings.mlr.press/v229/zheng23a.html",
+                "thumbnail": "assets/papers/cross_dataset_sensor_alignment.png"
+            },
+            {
+                "name": "Occ3D: A Large-Scale 3D Occupancy Prediction Benchmark for Autonomous Driving",
+                "authors": "Xiaoyu Tian*, Tao Jiang*, Longfei Yun, Yucheng Mao, Huitong Yang, Yue Wang, Yilun Wang, Hang Zhao",
+                "conference": "NeurIPS 2023",
+                "webpage": "https://tsinghua-mars-lab.github.io/Occ3D/",
+                "paper": "https://arxiv.org/abs/2304.14365",
+                "code": "https://github.com/Tsinghua-MARS-Lab/Occ3D",
+                "thumbnail": "assets/papers/occ3d.png"
+            },
+            {
+                "name": "GPT-Driver: Learning to Drive with GPT",
+                "authors": "Jiageng Mao, Yuxi Qian, Junjie Ye, Hang Zhao, Yue Wang",
+                "conference": "NeurIPS 2023 Foundation Models for Decision Making Workshop",
+                "webpage": "https://pointscoder.github.io/projects/gpt_driver/index.html",
+                "paper": "https://arxiv.org/abs/2310.01415",
+                "code": "https://github.com/PointsCoder/GPT-Driver",
+                "thumbnail": "assets/papers/gpt_driver.png"
+            },
+            {
+                "name": "Rethinking Directional Integration in Neural Radiance Fields",
+                "authors": "Congyue Deng, Jiawei Yang, Leonidas Guibas, Yue Wang",
+                "conference": "arxiv 2023",
+                "webpage": "https://cs.stanford.edu/~congyue/linerf/",
+                "paper": "https://arxiv.org/abs/2311.16504",
+                "thumbnail": "assets/papers/linerf.gif"
+            },
+            {
+                "name": "Augmenting Lane Perception and Topology Understanding with Standard Definition Navigation Map",
+                "authors": "Katie Z Luo, Xinshuo Weng, Yan Wang, Shuang Wu, Jie Li, Kilian Q Weinberger, Yue Wang, Marco Pavone",
+                "conference": "ICRA 2024",
+                "webpage": "https://katieluo88.github.io/SMERF/",
+                "paper": "https://arxiv.org/abs/2311.04079v1",
+                "code": "https://github.com/NVlabs/SMERF",
+                "thumbnail": "assets/papers/smerf.gif"
+            },
+            {
+                "name": "EmerNeRF: Emergent Spatial-Temporal Scene Decomposition via Self-Supervision",
+                "authors": "Jiawei Yang, Boris Ivanovic, Or Litany, Xinshuo Weng, Seung Wook Kim, Boyi Li, Tong Che, Danfei Xu, Sanja Fidler, Marco Pavone, Yue Wang",
+                "conference": "ICLR 2024",
+                "webpage": "https://emernerf.github.io/",
+                "paper": "https://arxiv.org/abs/2311.02077",
+                "code": "https://github.com/NVlabs/EmerNeRF",
+                "thumbnail": "assets/papers/emernerf.png"
+            },
+            {
+                "name": "PARA-Drive: Parallelized Architecture for Real-time Autonomous Driving",
+                "authors": "Xinshuo Weng, Boris Ivanovic, Yan Wang, Yue Wang, Marco Pavone",
+                "conference": "CVPR 2024",
+                "webpage": "https://xinshuoweng.github.io/paradrive/",
+                "paper": "https://openaccess.thecvf.com/content/CVPR2024/html/Weng_PARA-Drive_Parallelized_Architecture_for_Real-time_Autonomous_Driving_CVPR_2024_paper.html",
+                "thumbnail": "assets/papers/para_drive.png"
+            },
+            {
+                "name": "Driving Everywhere with Large Language Model Policy Adaptation",
+                "authors": "Boyi Li, Yue Wang, Jiageng Mao, Boris Ivanovic, Sushant Veer, Karen Leung, Marco Pavone",
+                "conference": "CVPR 2024",
+                "webpage": "https://boyiliee.github.io/llada/",
+                "paper": "https://arxiv.org/pdf/2402.05932",
+                "code": "https://github.com/Boyiliee/LLaDA-AV",
+                "thumbnail": "assets/papers/llada.png"
+            },
+            {
+                "name": "Towards Realistic Scene Generation with LiDAR Diffusion Models",
+                "authors": "Haoxi Ran, Vitor Guizilini, Yue Wang",
+                "conference": "CVPR 2024",
+                "webpage": "https://lidar-diffusion.github.io/",
+                "paper": "https://arxiv.org/abs/2404.00815",
+                "code": "https://github.com/hancyran/LiDAR-Diffusion",
+                "thumbnail": "assets/papers/lidar_diffusion.jpg"
+            },
+            {
+                "name": "Parallelized Spatiotemporal Binding",
+                "authors": "Gautam Singh, Yue Wang, Jiawei Yang, Boris Ivanovic, Sungjin Ahn, Marco Pavone, Tong Che",
+                "conference": "ICML 2024",
+                "webpage": "https://parallel-st-binder.github.io/",
+                "paper": "https://arxiv.org/abs/2402.17077",
+                "thumbnail": "assets/papers/psb.png"
+            },
+            {
+                "name": "PreSight: Enhancing Autonomous Vehicle Perception with City-Scale NeRF Priors",
+                "authors": "Tianyuan Yuan, Yucheng Mao, Jiawei Yang, Yicheng Liu, Yue Wang, Hang Zhao",
+                "conference": "ECCV 2024",
+                "webpage": "https://github.com/yuantianyuan01/PreSight",
+                "paper": "https://arxiv.org/abs/2403.09079",
+                "code": "https://github.com/yuantianyuan01/PreSight",
+                "thumbnail": "assets/papers/presight.jpg"
+            },
+            {
+                "name": "Denoising Vision Transformers",
+                "authors": "Jiawei Yang*, Katie Z Luo*, Jiefeng Li, Congyue Deng, Leonidas Guibas, Dilip Krishnan, Kilian Q Weinberger, Yonglong Tian, Yue Wang",
+                "conference": "ECCV 2024 Oral",
+                "webpage": "https://jiawei-yang.github.io/DenoisingViT/",
+                "paper": "https://arxiv.org/abs/2401.02957",
+                "code": "https://github.com/Jiawei-Yang/Denoising-ViT",
+                "thumbnail": "assets/papers/dvt.jpeg"
+            },
+            {
+                "name": "A Language Agent for Autonomous Driving",
+                "authors": "Jiageng Mao*, Junjie Ye*, Yuxi Qian, Marco Pavone, Yue Wang",
+                "conference": "COLM 2024",
+                "webpage": "https://usc-gvl.github.io/Agent-Driver/",
+                "paper": "https://arxiv.org/pdf/2311.10813",
+                "code": "https://github.com/USC-GVL/Agent-Driver",
+                "thumbnail": "assets/papers/agent-driver.png"
+            },
+            {
+                "name": "Tokenize the World into Object-level Knowledge to Address Long-tail Events in Autonomous Driving",
+                "authors": "Ran Tian, Boyi Li, Xinshuo Weng, Yuxiao Chen, Edward Schmerling, Yue Wang, Boris Ivanovic, Marco Pavone",
+                "conference": "CoRL 2024",
+                "paper": "https://arxiv.org/abs/2407.00959",
+                "thumbnail": "assets/papers/token.png"
+            },
+            {
+                "name": "Q-SLAM: Quadric Representations for Monocular SLAM",
+                "authors": "Chensheng Peng, Chenfeng Xu, Yue Wang, Mingyu Ding, Heng Yang, Masayoshi Tomizuka, Kurt Keutzer, Marco Pavone, Wei Zhan",
+                "conference": "CoRL 2024",
+                "paper": "https://arxiv.org/abs/2403.08125",
+                "thumbnail": "assets/papers/q-slam.png"
+            },
+            {
+                "name": "RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation",
+                "authors": "Yuxuan Kuang*, Junjie Ye*, Haoran Geng*, Jiageng Mao, Congyue Deng, Leonidas Guibas, He Wang, Yue Wang",
+                "conference": "CoRL 2024 Oral",
+                "webpage": "https://yuxuank.com/RAM/",
+                "paper": "https://arxiv.org/abs/2407.04689",
+                "code": "https://github.com/yxKryptonite/RAM_code",
+                "thumbnail": "assets/papers/ram.png"
+            },
+            {
+                "name": "DistillNeRF: Perceiving 3D Scenes from Single-Glance Images by Distilling Neural Fields and Foundation Model Features",
+                "authors": "Letian Wang, Seung Wook Kim, Jiawei Yang, Cunjun Yu, Boris Ivanovic, Steven L. Waslander, Yue Wang, Sanja Fidler, Marco Pavone, Peter Karkus",
+                "conference": "NeurIPS 2024",
+                "webpage": "https://distillnerf.github.io/",
+                "paper": "https://arxiv.org/abs/2406.12095",
+                "thumbnail": "assets/papers/distillnerf.png"
+            },
+            {
+                "name": "Memorize What Matters: Emergent Scene Decomposition from Multitraverse",
+                "authors": "Yiming Li, Zehong Wang, Yue Wang, Zhiding Yu, Zan Gojcic, Marco Pavone, Chen Feng, Jose M. Alvarez",
+                "conference": "NeurIPS 2024 Spotlight",
+                "webpage": "https://nvlabs.github.io/3DGM/",
+                "paper": "https://arxiv.org/abs/2405.17187",
+                "code": "https://github.com/NVlabs/3DGM",
+                "thumbnail": "assets/papers/3dgm.png"
+            },
+            {
+                "name": "Large Spatial Model: End-to-end Unposed Images to Semantic 3D",
+                "authors": "Zhiwen Fan*, Jian Zhang*, Wenyan Cong, Peihao Wang, Renjie Li, Kairun Wen, Shijie Zhou, Achuta Kadambi, Zhangyang Wang, Danfei Xu, Boris Ivanovic, Marco Pavone, Yue Wang",
+                "conference": "NeurIPS 2024",
+                "webpage": "https://largespatialmodel.github.io/",
+                "paper": "https://arxiv.org/abs/2410.18956",
+                "thumbnail": "assets/papers/lsm.svg"
+            },
+            {
+                "name": "Multiview Equivariance Improves 3D Correspondence Understanding with Minimal Feature Finetuning",
+                "authors": "Yang You, Yixin Li, Congyue Deng, Yue Wang, Leonidas Guibas",
+                "conference": "ICLR 2025",
+                "webpage": "",
+                "paper": "https://arxiv.org/abs/2411.19458",
+                "code": "https://github.com/qq456cvb/3DCorrEnhance",
+                "thumbnail": "assets/papers/3dcorrenhance.png"
+            },
+            {
+                "name": "Scene Flow as a Partial Differential Equation",
+                "authors": "Kyle Vedder, Neehar Peri, Ishan Khatri, Siyi Li, Eric Eaton, Mehmet Kocamaz, Yue Wang, Zhiding Yu, Deva Ramanan, Joachim Pehserl",
+                "conference": "ICLR 2025",
+                "webpage": "https://vedder.io/eulerflow",
+                "paper": "https://arxiv.org/abs/2410.02031",
+                "code": "https://github.com/kylevedder/SceneFlowZoo",
+                "thumbnail": "assets/papers/eulerflow.gif"
+            },
+            {
+                "name": "Fantastic Copyrighted Beasts and How (Not) to Generate Them",
+                "authors": "Luxi He, Yangsibo Huang, Weijia Shi, Tinghao Xie, Haotian Liu, Yue Wang, Luke Zettlemoyer, Chiyuan Zhang, Danqi Chen, Peter Henderson",
+                "conference": "ICLR 2025",
+                "webpage": "https://copycat-eval.github.io/",
+                "paper": "https://arxiv.org/abs/2406.14526",
+                "code": "",
+                "thumbnail": "assets/papers/copyrighted.png"
+            },
+            {
+                "name": "Language-Image Models with 3D Understanding",
+                "authors": "Jang Hyun Cho, Boris Ivanovic, Yulong Cao, Edward Schmerling, Yue Wang, Xinshuo Weng, Boyi Li, Yurong You, Philipp Kraehenbuehl, Yan Wang, Marco Pavone",
+                "conference": "ICLR 2025",
+                "webpage": "https://janghyuncho.github.io/Cube-LLM/",
+                "paper": "https://arxiv.org/abs/2405.03685",
+                "code": "",
+                "thumbnail": "assets/papers/cubellm.png"
+            },
+            {
+                "name": "LoRA3D: Low-Rank Self-Calibration of 3D Geometric Foundation Models",
+                "authors": "Ziqi Lu, Heng Yang, Danfei Xu, Boyi Li, Boris Ivanovic, Marco Pavone, Yue Wang",
+                "conference": "ICLR 2025",
+                "webpage": "",
+                "paper": "https://arxiv.org/abs/2412.07746",
+                "code": "",
+                "thumbnail": "assets/papers/lora3d.png"
+            },
+            {
+                "name": "OmniRe: Omni Urban Scene Reconstruction",
+                "authors": "Ziyu Chen, Jiawei Yang, Jiahui Huang, Riccardo Lutio, Janick Martinez Esturo, Boris Ivanovic, Or Litany, Zan Gojcic, Sanja Fidler, Marco Pavone, Li Song, Yue Wang",
+                "conference": "ICLR 2025",
+                "webpage": "https://ziyc.github.io/omnire/",
+                "paper": "https://arxiv.org/abs/2408.16760",
+                "code": "https://github.com/ziyc/drivestudio",
+                "thumbnail": "assets/papers/omnire.png"
+            },
+            {
+                "name": "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding",
+                "authors": "Wei Chow*, Jiageng Mao*, Boyi Li, Daniel Seita, Vitor Campagnolo Guizilini, Yue Wang",
+                "conference": "ICLR 2025",
+                "webpage": "https://physbench.github.io/",
+                "paper": "https://openreview.net/pdf?id=Q6a9W6kzv5",
+                "thumbnail": "assets/papers/physbench.png"
+            },
+            {
+                "name": "STORM: Spatio-Temporal Reconstruction Model for Large-Scale Outdoor Scenes",
+                "authors": "Jiawei Yang, Jiahui Huang, Yuxiao Chen, Yan Wang, Boyi Li, Yurong You, Apoorva Sharma, Maximilian Igl, Peter Karkus, Danfei Xu, Boris Ivanovic, Yue Wang*, Marco Pavone*",
+                "conference": "ICLR 2025",
+                "webpage": "https://jiawei-yang.github.io/STORM/",
+                "paper": "https://arxiv.org/abs/2501.00602",
+                "code": "",
+                "thumbnail": "assets/papers/storm.png"
+            },
+            {
+                "name": "SMART: Advancing Scalable Map Priors for Driving Topology Reasoning",
+                "authors": "Junjie Ye, David Paz, Hengyuan Zhang, Yuliang Guo, Xinyu Huang, Henrik I. Christensen, Yue Wang, Liu Ren",
+                "conference": "ICRA 2025",
+                "webpage": "https://jay-ye.github.io/smart/",
+                "paper": "https://arxiv.org/abs/2502.04329",
+                "code": "",
+                "thumbnail": "assets/papers/smart.gif"
+            },
+            {
+                "name": "DreamDrive: Generative 4D Scene Modeling from Street View Images",
+                "authors": "Jiageng Mao, Boyi Li, Boris Ivanovic, Yuxiao Chen, Yan Wang, Yurong You, Chaowei Xiao, Danfei Xu, Marco Pavone, Yue Wang",
+                "conference": "ICRA 2025",
+                "webpage": "https://pointscoder.github.io/DreamDrive/",
+                "paper": "https://arxiv.org/abs/2501.00601",
+                "code": "",
+                "thumbnail": "assets/papers/dreamdrive.gif"
+            },
+            {
+                "name": "RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning",
+                "authors": "Haoran Geng*, Feishi Wang*, Songlin Wei*, Yuyang Li*, Bangjun Wang*, Boshi An*, Charlie Tianyue Cheng*, Haozhe Lou, Peihao Li, Yen-Jen Wang, Yutong Liang, Dylan Goetting, Chaoyi Xu, Haozhe Chen, Yuxi Qian, Yiran Geng, Jiageng Mao, Weikang Wan, Mingtong Zhang, Jiangran Lyu, Siheng Zhao, Jiazhao Zhang, Jialiang Zhang, Chengyang Zhao, Haoran Lu, Yufei Ding, Ran Gong, Yuran Wang, Yuxuan Kuang, Ruihai Wu, Baoxiong Jia, Carlo Sferrazza, Hao Dong, Siyuan Huang, Yue Wang†, Jitendra Malik†, Pieter Abbeel†",
+                "conference": "RSS 2025",
+                "webpage": "https://roboverseorg.github.io/",
+                "paper": "https://arxiv.org/abs/2504.18904",
+                "code": "https://github.com/RoboVerseOrg/RoboVerse",
+                "thumbnail": "assets/papers/roboverse.jpg"
+            },   
+            {
+                "name": "Deformable Beta Splatting",
+                "authors": "Rong Liu*, Dylan Sun*, Meida Chen, Yue Wang†, Andrew Feng†",
+                "conference": "SIGGRAPH 2025",
+                "webpage": "https://rongliu-leo.github.io/beta-splatting/",
+                "paper": "https://arxiv.org/abs/2501.18630",
+                "code": "https://github.com/RongLiu-Leo/beta-splatting",
+                "thumbnail": "assets/papers/dbs.png"
+            },     
+            {
+                "name": "Extrapolated Urban View Synthesis Benchmark",
+                "authors": "Xiangyu Han, Zhen Jia, Boyi Li, Yan Wang, Boris Ivanovic, Yurong You, Lingjie Liu, Yue Wang, Marco Pavone, Chen Feng, Yiming Li",
+                "conference": "ICCV 2025",
+                "webpage": "https://ai4ce.github.io/EUVS-Benchmark/",
+                "paper": "https://arxiv.org/pdf/2412.05256",
+                "code": "",
+                "thumbnail": "assets/papers/euvs.png"
+            },     
+            {
+                "name": "InfiniCube: Unbounded and Controllable Dynamic 3D Driving Scene Generation with World-Guided Video Models",
+                "authors": "Yifan Lu, Xuanchi Ren, Jiawei Yang, Tianchang Shen, Zhangjie Wu, Jun Gao, Yue Wang, Siheng Chen, Mike Chen, Sanja Fidler, Jiahui Huang",
+                "conference": "ICCV 2025",
+                "webpage": "https://research.nvidia.com/labs/toronto-ai/infinicube/",
+                "paper": "https://arxiv.org/abs/2412.03934",
+                "code": "",
+                "thumbnail": "assets/papers/infinicube.png"
+            },     
+            {
+                "name": "Learning an Implicit Physics Model for Image-based Fluid Simulation",
+                "authors": "Emily Yue-ting Jia, Jiageng Mao, Zhiyuan Gao, Yajie Zhao, Yue Wang",
+                "conference": "ICCV 2025",
+                "webpage": "https://physfluid.github.io/",
+                "paper": "https://arxiv.org/abs/2508.08254",
+                "code": "",
+                "thumbnail": "assets/papers/physfluid.png"
+            },
+            {
+                "name": "Learning from Massive Human Videos for Universal Humanoid Pose Control",
+                "authors": "Jiageng Mao, Siheng Zhao, Siqi Song, Tianheng Shi, Junjie Ye, Mingtong Zhang, Haoran Geng, Jitendra Malik, Vitor Campagnolo Guizilini, Yue Wang",
+                "conference": "Humanoid 2025",
+                "webpage": "https://usc-gvl.github.io/UH-1/",
+                "paper": "https://arxiv.org/abs/2412.14172",
+                "code": "https://github.com/sihengz02/UH-1",
+                "thumbnail": "assets/papers/uh1.png"
+            },
+            {
+                "name": "ManipBench: Benchmarking Vision-Language Models for Low-Level Robot Manipulation",
+                "authors": "Enyu Zhao*, Vedant Raval*, Hejia Zhang*, Jiageng Mao, Zeyu Shangguan, Stefanos Nikolaidis, Yue Wang, Daniel Seita",
+                "conference": "CoRL 2025",
+                "webpage": "https://manipbench.github.io/",
+                "paper": "https://arxiv.org/abs/2505.09698",
+                "code": "",
+                "thumbnail": "assets/papers/manipbench.png"
+            },
+            {
+                "name": "Robot Learning from Any Images",
+                "authors": "Siheng Zhao*, Jiageng Mao*, Wei Chow, Zeyu Shangguan, Tianheng Shi, Rong Xue, Yuxi Zheng, Yijia Weng, Yang You, Daniel Seita, Leonidas Guibas, Sergey Zakharov, Vitor Campagnolo Guizilini, Yue Wang",
+                "conference": "CoRL 2025",
+                "webpage": "",
+                "paper": "",
+                "code": "",
+                "thumbnail": "assets/papers/rola.png"
+            },
+        ]
+
+        let section = document.getElementById("publications");
+        publications.forEach(publication => {
+            let name = publication["name"];
+            let authors = publication["authors"];
+            let conference = publication["conference"];
+            let webpage = publication["webpage"] ? `<a href="${publication["webpage"]}">Webpage</a>` : "";;
+            let code = publication["code"] ? `<a href="${publication["code"]}">Code</a>` : "";
+            let paper = publication["paper"] ? `<a href="${publication["paper"]}">Paper</a>` : "";
+            let thumbnail = publication["thumbnail"];
+            let note = publication["note"] ? publication["note"] : "";
+            // Highlight "Spotlight" "Oral" in red
+            if (conference.includes("Spotlight")) {
+                conference = conference.replace("Spotlight", `<span style="color: #ffb61e; font-weight: bold;">Spotlight</span>`);
+            }
+            if (conference.includes("Oral")) {
+               conference = conference.replace("Oral", `<span style="color: #ffb61e; font-weight: bold;">Oral</span>`);
+            }
+            let thumbnail_node = thumbnail.includes("mp4") ?
+                `<video style="margin-right: 15px; border-radius: 5px;" width=140px height=auto autoplay loop muted>
+                <source src="${thumbnail}" type="video/mp4">
+            </video>` :
+                `<img src="${thumbnail}" style="width: 140px; margin-right: 15px; border-radius: 5px;" />`;
+            section.insertAdjacentHTML('afterbegin',
+                `
+                <div style="padding-bottom: 30px; display:flex;">
+                    <a href="${publication["webpage"] || '#'}">
+                        ${thumbnail_node}
+                    </a>
+                    <div>
+                        <a href="${publication["webpage"] || '#'}"> <b>${name}</b> </a>
+                        <p> ${authors}</p>
+                        <p> ${conference}</p>
+                        <p style="color:#ffb61e;"> ${note}</p>
+                        ${[webpage, paper, code].filter(link => link).join(", ")}
+                    </div>
+                </div>
+                `);
+        });
+        section.insertAdjacentHTML('afterbegin', `<h1>Research</h1>`);
+    </script>
+</body>
+
+</html>
